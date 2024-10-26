@@ -1,0 +1,39 @@
+---
+import SideArrow from "./icons/sideArrow.astro"
+import LeftArrow from "./icons/leftArrow.astro"
+import Cards from "./Cards.astro"
+import ExperienceList from "./experienceList.astro"
+---
+
+
+
+<div class="pt-[75px] lg:pt-[145px] flex flex-col gap-[31px] lg:gap-3 lg:flex-row lg:justify-between">
+    <div class="lg:max-w-[22%] w-full flex flex-col lg:mt-[120px]">
+        <p>
+            <span class="text-xl leading-[27px] md:text-[32px] md:leading-[43px] px-0 text-center mb-[14px] bg-[#FFC9F0] drop-shadow-pink font-handlee font-bold">Work Experience</span>
+        </p>
+        <div class="items-end lg:flex justify-end mb-5 md:mb-6 hidden">
+            <SideArrow />
+        </div>
+        <div class="mb-5 mt-[13px] lg:hidden">
+            <LeftArrow />
+        </div>
+        <p class="text-base leading-5 text-black md:text-2xl md:leading-[34px] max-w-[163px] md:max-w-[253px] hidden md:flex">Have been designing since my past 4 years</p>
+        <p class="text-base leading-5 mb-0 text-black md:text-2xl md:leading-[34px] max-w-[163px] md:max-w-[253px] md:hidden ">Have designed
+morethan 20 projects</p>
+    </div>
+    <div class="lg:max-w-[74%] w-full">
+        <div class="hidden lg:flex lg:h-[72px] border-b-2 border-black w-full"></div>
+        <div class="w-full flex">
+            <div class="hidden lg:flex lg:w-[55px] lg:-my-[72px] border-r-2 border-black min-h-full"/>
+            <div class="w-full flex flex-col lg:justify-center lg:items-center gap-[19px] lg:gap-[38px] px-0 lg:px-8 pt-[33px] pb-0 lg:pt-[65px] lg:pb-[78px] ">
+                <ExperienceList description="Worked on design system at Material 3 designs" title="Design intern at " tag="1" highlight="Google" date="20, April 2021" background="bg-yellowBg" border="border-[#EECD56]" />
+                <ExperienceList description="Worked on design system at Material 3 designs" title="Sr. UI/UX Designer at " tag="2" highlight="Microsoft" date="20, April 2021" background="bg-blueBg" border="border-[#5AB5E8]" />
+                <ExperienceList description="Worked on design system at Material 3 designs" title="Software Engineer at " tag="3" highlight="SASS Startup" date="20, April 2021" background="bg-pinkBg" border="border-[#F384D4]" />
+            </div>
+            <div class="hidden lg:flex lg:w-[55px] -my-[72px] border-l-2 border-black min-h-full"/>
+
+        </div>
+        <div class="hidden lg:flex lg:h-[72px] border-t-2 border-black w-full"></div>
+    </div>
+</div>

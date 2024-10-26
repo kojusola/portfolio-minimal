@@ -1,0 +1,28 @@
+---
+import { Image } from 'astro:assets';
+import CardImage from '../assets/card-image.png';
+import Cursor from './icons/cursor.astro';
+
+interface Props {
+	title: string;
+	tag: string;
+	description: string;
+	highlight: string;
+	date: string;
+	background: string;
+    border: string;
+}
+
+const { description, title, tag, highlight, date, background, border } = Astro.props;
+---
+
+
+
+<div class="w-auto flex gap-[37px] items-center">
+    <div class={`border-2 ${border} px-6 py-[5px] lg:px-[39px]  w-[60px] lg:w-[95px] lg:py-2 min-w-[61px] ${background} rounded-md font-handlee text-[31px] leading-[46px] lg:text-5xl lg:leading-[72px]`}>{tag}</div>
+    <div class="font-inter text-[#0C0C0C]">
+        <p class="text-base leading-[22px] lg:text-2xl lg:leading-[34px]">{title}<span class="font-bold">{highlight}</span></p>
+        <p class="mt-2.5 text-[11px] leading-[15px] lg:text-lg lg:leading-[25px]">{description}</p>
+        <p class="mt-1.5 text-[#706F6F] text-[9px] leading-[13px] lg:text-base lg:leading-[34px]">{date}</p>
+    </div>
+</div>

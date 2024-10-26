@@ -1,0 +1,37 @@
+---
+import ProfileImage from "./icons/profileImage.astro"
+import Arrow from "./icons/arrow.astro"
+---
+
+
+
+<div class="w-full pt-[75px] pb-[75px]  md:pt-[77px] md:pb-[110px] flex flex-col gap-8 md:gap-6 ">
+    <div class="md:pt-5 md:pl-2 flex">
+         <ProfileImage/>
+        <div class="pt-4 md:pt-8">
+            <Arrow />
+        </div>
+        <div class="ml-2 md:ml-3 pt-[14px] md:pt-4 origin-bottom -rotate-[5.18deg]">
+            <p class="bg-pinkBg drop-shadow-pink text-xl leading-[26px] md:text-[32px] md:leading-[42px] font-handlee font-bold">znisa</p>
+        </div>
+    </div>
+    <div class="lg:flex lg:justify-between gap-[17px] md:gap-3">
+        <div class=" font-semibold max-w-[237px] md:max-w-[474px] w-full">
+            <p class="text-[32px] leading-10 md:max-xl:leading-[56px] md:max-xl:text-[50px] xl:text-[64px] xl:leading-[77px] ">I <span class="bg-hero-background">design</span> top notch websites</p>
+        </div>
+        <div class="max-w-[477px] w-full flex flex-col gap-[17px] md:gap-[30px]">
+            <p class="text-base leading-5 md:text-[23px] md:leading-[33.6px] font-normal px-0 w-full">I’ll design your website and will develop to land it on internet using No-code.</p>
+            <div>
+                <button class="text-white md:drop-shadow-blackButton text-base leading-[22px] md:text-2xl md:leading-9 font-semibold bg-textColor px-[12px] py-[6px] md:px-[58px] md:py-[18px]">Hire me</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    profile-image {
+        height: 106px;
+        width:113px;
+    }
+</style>

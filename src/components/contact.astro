@@ -1,0 +1,32 @@
+---
+import SideArrow from "./icons/sideArrow.astro"
+import LeftArrow from "./icons/leftArrow.astro"
+import Input from "./input.astro"
+---
+
+
+
+<div class="pt-[75px] lg:pt-[145px] flex flex-col gap-[35px] lg:gap-3 lg:flex-row lg:px-[55px] lg:justify-between pb-[31px] lg:pb-[162px]">
+    <div class="lg:max-w-[22%] w-full flex flex-col lg:mt-[20px]">
+        <p>
+            <span class="text-xl leading-[27px] md:text-[32px] md:leading-[43px] px-0 text-center mb-[14px] bg-[#FFC9F0] drop-shadow-pink font-handlee font-bold">Contact here</span>
+        </p>
+        <div class="items-end lg:flex mt-[13px] xl:pr-10 justify-end mb-5 md:mb-6 hidden">
+            <SideArrow />
+        </div>
+        <div class="mb-5 mt-[13px] lg:hidden">
+            <LeftArrow />
+        </div>
+        <p class="text-base leading-5 text-black md:text-2xl md:leading-[34px] max-w-[163px] md:max-w-[253px]">Have a project idea? just say me <span class="font-bold">Hi.</span></p>
+    </div>
+    <div class="lg:max-w-[53%] w-full flex flex-col gap-[30px] lg:gap-[74px] align-end">
+        <div class="flex gap-[29px] lg:gap-[60px] flex-col">
+            <Input placeholder="Zainab Nisa" tag="Name" background="bg-pinkBg" />
+            <Input placeholder="zainab123@gmail.com" tag="Your email" background="bg-yellowBg" />
+            <Input placeholder=" I want to discuss you about ......." tag=" About Project" background="bg-blueBg" />
+        </div>
+        <div class="flex lg:justify-end lg:items-end">
+            <button class="text-white md:drop-shadow-blackButton text-base leading-[22px] lg:text-2xl lg:leading-[34px] font-inter font-semibold bg-textColor px-[20px] py-[9px] lg:px-[41px] lg:py-[18px] whitespace-nowrap">Send Here</button>
+        </div>
+    </div>
+</div>

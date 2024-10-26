@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Header from '../components/header.astro';
+import Hero from '../components/hero.astro';
+import WhatIDo from '../components/whatIDo.astro';
+import Featured from '../components/featured.astro';
+import Experience from '../components/experience.astro';
+import Contact from '../components/contact.astro';
+import Footer from '../components/footer.astro';
+---
+
+
+<Layout title="Welcome to Astro.">
+	<main class=" h-full relative overflow-hidden px-6 bg-white text-textColor font-inter">
+    <div class=" max-w-[1244px] h-full bg-white w-full mx-auto">
+      <div class="bg-mobile-background-pattern lg:bg-background-pattern bg-no-repeat w-full h-full bg-cover bg-center">
+      <div class="pl-5">
+        <Header />
+        <Hero />
+        <WhatIDo />
+        <Featured />
+        <Experience />
+        <Contact />
+        <Footer />
+      </div>
+    </div>
+    </div>
+	</main>
+</Layout>

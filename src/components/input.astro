@@ -1,0 +1,20 @@
+---
+import { Image } from 'astro:assets';
+import CardImage from '../assets/card-image.png';
+import Cursor from './icons/cursor.astro';
+
+interface Props {
+	placeholder: string;
+	tag: string;
+	background: string;
+}
+
+const { placeholder, tag, background, } = Astro.props;
+---
+
+
+
+<div class="w-full flex ">
+    <p class={` ${background} border-l-[0.5px] border-textColor whitespace-nowrap font-handlee lg:pl-0.5 text-textColor text-base leading-[21px] lg:text-[32px] lg:leading-[43px] font-bold`}>{tag}</p>
+    <input placeholder={placeholder} class="w-full h-full bg-transparent border-0 border-b-[1px] lg:border-b-2 font-light border-black outline-none focus:border-none placeholder:text-textColor  placeholder:font-handlee placholder:text-base placeholder:leading-[21px] lg:placeholder:text-[28px] lg:placeholder:leading-[39px] text-base leading-[21px] lg:text-[28px] lg:leading-[39px] pl-[29px]" />
+</div>

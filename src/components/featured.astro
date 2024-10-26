@@ -1,0 +1,36 @@
+---
+import SideArrow from "./icons/sideArrow.astro"
+import LeftArrow from "./icons/leftArrow.astro"
+import Cards from "./Cards.astro"
+---
+
+
+
+<div class="pt-[145px] flex flex-col gap-[31px] lg:gap-3 lg:flex-row lg:justify-between">
+    <div class="lg:max-w-[22%] w-full flex flex-col lg:mt-[120px]">
+       <p>
+         <span class="text-xl leading-[27px] md:text-[32px] md:leading-[43px] px-0 text-center mb-[14px] bg-[#FFC9F0] drop-shadow-pink font-handlee font-bold">Featured Projects</span>
+       </p>
+        <div class="items-end lg:flex justify-end mb-5 md:mb-6 hidden">
+            <SideArrow />
+        </div>
+        <div class="mb-5 lg:hidden">
+            <LeftArrow />
+        </div>
+        <p class="text-base leading-5 text-black md:text-2xl md:leading-[34px] max-w-[163px] md:max-w-[253px] ">Have designed morethan 20 projects</p>
+    </div>
+    <div class="lg:max-w-[74%] w-full flex justify-between gap-4 md:gap-3 lg:gap-[31px] flex-wrap">
+        <div class="w-full lg:max-w-[47%]">
+            <Cards href ="" title= "4 style Portfolio design" tag="No-Code" border="border-[#DB4A90]" background="bg-[#F072CD]" cursor="fill-[#F072CD]" dropShadow="drop-shadow-featurePink" />
+        </div>
+         <div class="w-full lg:max-w-[47%]">
+            <Cards href ="" title= "Color system for app" tag="UI Design" border="border-[#1C6AB1]" background="bg-[#5AB5E8]" cursor="fill-[#5AB5E8]" dropShadow="drop-shadow-featureBlue" />
+        </div>
+         <div class="w-full lg:max-w-[47%]">
+            <Cards href ="" title= "Onboarding screen process" tag="UX Design" border="border-[#BB9C2A]" background="bg-[#E5C141]" cursor="fill-[#E5C141]" dropShadow="drop-shadow-featureYellow" />
+        </div>
+         <div class="w-full lg:max-w-[47%]">
+           <Cards href ="" title= "Finance Landing page" tag="UI Design" border="border-[#4ED543]" background="bg-[#7CF072]" cursor="fill-[#7CF072]" dropShadow="drop-shadow-featureBlue" />
+        </div>
+    </div>
+</div>
