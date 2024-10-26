@@ -1,6 +1,4 @@
 ---
-import { Image } from 'astro:assets';
-import CardImage from '/public/images/card-image.svg';
 import Cursor from './icons/cursor.astro';
 
 interface Props {
@@ -19,7 +17,7 @@ const { href, title, tag, border, background, cursor, dropShadow } = Astro.props
 
 
 <div class="border-solid flex flex-col gap-4 md:gap-[22px] border-[3px] border-black rounded-md p-[17px] md:pl-[23px] md:pr-[19px] md:pb-[28px] md:pt-[19px] bg-white">
-    <Image src={CardImage} alt="card image." class="h-[160px] lg:h-[318px] w-full" />
+    <img src="/images/card-image.svg" alt="card image." class="h-[160px] lg:h-[318px] w-full" />
     <div class="flex justify-between items-end gap-1">
         <div class="max-w-[55%] w-full">
             <p class="font-handlee text-[21px] md:text-[28px] md:leading-[28px] font-bold">{title}</p>
